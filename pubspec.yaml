@@ -1,0 +1,111 @@
+name: islamic_songs
+description: A new Flutter project.
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.6 <3.0.0"
+
+dependencies:
+  audio_service: ^0.18.9
+  cupertino_icons: ^1.0.2
+  firebase_core: ^2.15.1
+  firebase_crashlytics: ^3.3.5
+  flutter:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  get: ^4.6.5
+  google_fonts: ^5.1.0
+  just_audio: ^0.9.32
+  rename: ^3.0.0
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/logob.png"
+  min_sdk_android: 21 # android min sdk min:16, default 21
+  web:
+    generate: true
+    image_path: "assets/logob.png"
+    # background_color: "#hexcode"
+    # theme_color: "#hexcode"
+  windows:
+    generate: true
+    image_path: "assets/logob.png"
+    icon_size: 48 # min:48, max:256, default: 48
+  macos:
+    generate: true
+    image_path: "assets/logob.png"
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_native_splash: ^2.2.19
+  flutter_test:
+    sdk: flutter
+# rename setAppName --targets ios,android,macos,windows,linux --value "Islamic songs"
+# rename setBundleId --targets ios,android,macos,windows,linux --value "com.amadytech.islamic_songs"
+# flutter_native_splash:
+#   color: "#42a5f5"
+#   image: "assets/logob.png"
+#   android_12:
+#     color: "#42a5f5"
+#     image: "assets/logob.png"
+#   android: true
+#   ios: true
+#   web: true
+# dart run flutter_native_splash:create
+flutter_native_splash:
+  color: "#42a5f5"
+  image: "assets/logob.png"
+  background_image: "assets/background_ic_launcher.png"
+  branding: "assets/background_ic_launcher.png"
+  # color_dark: "#121212"
+  color_dark: "#42a5f5"
+  image_dark: "assets/logob.png"
+  branding_dark: "assets/background_ic_launcher.png"
+  android_12:
+    image: "assets/logob.png"
+    icon_background_color: "#42a5f5"
+    image_dark: "assets/logob.png"
+    icon_background_color_dark: "#42a5f5"
+  android_gravity: center
+  web_image_mode: center
+  ios_content_mode: center
+  android: true
+  ios: true
+  web: true
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  #   - images/a_dot_ham.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
